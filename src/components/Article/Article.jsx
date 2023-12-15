@@ -6,14 +6,17 @@ const Article = ({ title, text, tags, image, alt }) => {
       </h3>
       <div className="w-full justify-end gap-2 pr-5 hidden sm:flex">
         {tags.map((tag, index) => (
-          <span key={tag} className="alura-tags">
+          <span key={tag} className="alura-tag">
             {tag}
           </span>
         ))}
       </div>
       <div className="grid gap-1">
         {text.map((content, index) => (
-          <p key={index} className="text-alura-200 dark:text-gray-400">
+          <p
+            key={index}
+            className="text-alura-200 dark:text-gray-400 line-clamp-2 sm:line-clamp-none"
+          >
             {content}
           </p>
         ))}
