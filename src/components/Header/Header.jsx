@@ -9,7 +9,7 @@ const Header = ({ user }) => {
         <span className="text-gray-100 mr-8"></span>
       )}
 
-      <h1 className="text-gray-100 text-xl">Alura Newsletter</h1>
+      <h1>Alura Newsletter</h1>
       <ToggleTheme />
     </div>
   );

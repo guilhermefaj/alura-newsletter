@@ -1,15 +1,12 @@
 const Article = ({ title, text, tags, image, alt }) => {
   return (
-    <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex flex-col items-center gap-2">
+    <div className="alura-card">
       <h3 className="text-xl text-alura-200 dark:text-gray-200 font-bold">
         {title}
       </h3>
       <div className="w-full justify-end gap-2 pr-5 hidden sm:flex">
         {tags.map((tag, index) => (
-          <span
-            key={tag}
-            className="bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 dark:text-gray-200 text-xs uppercase font-bold"
-          >
+          <span key={tag} className="alura-tags">
             {tag}
           </span>
         ))}
